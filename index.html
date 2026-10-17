@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 <title>Siti Nur Hayati &amp; Teguh Firmansyah | Wedding Invitation</title>
 <meta name="description" content="Undangan pernikahan Siti Nur Hayati & Teguh Firmansyah, Minggu 22 November 2026">
-<link rel="preload" as="image" href="foto/p01.jpg">
+<link rel="preload" as="image" href="p01.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tangerine:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -156,13 +156,13 @@
   .scene.active .r{opacity:1;transform:none;filter:none;transition:opacity 1s ease,transform 1s ease,filter 1s ease;transition-delay:calc(var(--i,0)*.15s + .3s);}
 
   /* hero */
-  .hero{background:#150d09;justify-content:space-between;padding:112px 24px 78px;}
+  .hero{background:#150d09;justify-content:flex-end;padding:112px 24px 78px;}
   .hero .scene-bg{--pos:50% 20%;animation:kb 20s ease-in-out infinite alternate;transform-origin:50% 35%;}
   @keyframes kb{from{transform:scale(1);}to{transform:scale(1.07);}}
   .hero::before{content:"";position:absolute;inset:0;z-index:1;
     background:radial-gradient(120% 85% at 50% 38%,transparent 42%,rgba(14,8,5,.6) 100%),
                linear-gradient(180deg,rgba(20,11,7,.55) 0%,rgba(20,11,7,0) 24%,rgba(20,11,7,.14) 36%,rgba(20,11,7,.74) 56%,rgba(20,11,7,.9) 78%,rgba(20,11,7,.96) 100%);}
-  .hero-top .g-label{letter-spacing:.42em;text-shadow:0 1px 10px rgba(0,0,0,.7);}
+  .hero .g-label{letter-spacing:.42em;color:#fbf3df;text-shadow:0 1px 3px rgba(0,0,0,.95),0 0 14px rgba(0,0,0,.85);}
   .hero .names{font-family:'Tangerine',cursive;font-weight:700;font-size:clamp(46px,min(16.5vw,9.6vh),80px);line-height:.98;filter:drop-shadow(0 3px 10px rgba(0,0,0,.7));}
   .hero .amp{color:#d4b078;text-shadow:0 2px 10px rgba(0,0,0,.8);}
   .hero-date{margin-top:12px;font-family:'Cormorant Garamond',serif;font-size:19px;letter-spacing:.14em;color:#fbf3df;text-shadow:0 2px 12px rgba(0,0,0,.8);}
@@ -361,12 +361,10 @@
 
   <!-- ============================ 1. HERO ============================ -->
   <section class="scene hero" id="hero">
-    <div class="scene-bg" style="--bg:url(foto/p01.jpg)"></div>
+    <div class="scene-bg" style="--bg:url(p01.jpg)"></div>
     <div class="dust" id="dust"></div>
-    <div class="hero-top">
-      <p class="g-label r" style="--i:0">The Wedding Of</p>
-    </div>
     <div class="hero-bottom">
+      <p class="g-label r" style="--i:0;margin-bottom:8px">The Wedding Of</p>
       <p class="gold names r" style="--i:1">Siti Nur Hayati</p>
       <p class="amp r" style="--i:2">&amp;</p>
       <p class="gold names r" style="--i:3">Teguh Firmansyah</p>
@@ -377,7 +375,7 @@
 
   <!-- ============================ 2. GREETING ============================ -->
   <section class="scene veil greet" id="greeting">
-    <div class="scene-bg" style="--bg:url(foto/p03.jpg);--pos:50% 40%"></div>
+    <div class="scene-bg" style="--bg:url(p03.jpg);--pos:50% 40%"></div>
     <svg class="fol tl" viewBox="0 0 260 300"><use href="#fol2"/></svg>
     <svg class="fol tr" viewBox="0 0 260 300"><g transform="translate(260 0) scale(-1 1)"><use href="#fol1"/></g></svg>
     <svg class="fol bl sm" viewBox="0 0 260 300"><g transform="translate(0 300) scale(1 -1)"><use href="#fol1"/></g></svg>
@@ -393,14 +391,14 @@
 
   <!-- ============================ 3. MEMPELAI ============================ -->
   <section class="scene veil pair" id="mempelai">
-    <div class="scene-bg" style="--bg:url(foto/p07.jpg);--pos:50% 45%"></div>
+    <div class="scene-bg" style="--bg:url(p07.jpg);--pos:50% 45%"></div>
     <svg class="fol tl xs" viewBox="0 0 260 300"><use href="#fol1"/></svg>
     <svg class="fol tr xs" viewBox="0 0 260 300"><g transform="translate(260 0) scale(-1 1)"><use href="#fol2"/></g></svg>
     <svg class="fol bl xs" viewBox="0 0 260 300"><g transform="translate(0 300) scale(1 -1)"><use href="#fol2"/></g></svg>
     <svg class="fol br xs" viewBox="0 0 260 300"><g transform="translate(260 300) scale(-1 -1)"><use href="#fol1"/></g></svg>
 
     <div class="duo r" style="--i:0">
-      <div class="portrait" style="--bg:url(foto/bride.jpg)"></div>
+      <div class="portrait" style="--bg:url(bride.jpg)"></div>
       <div>
         <p class="label">Mempelai Wanita</p>
         <p class="script name">Siti Nur Hayati</p>
@@ -414,7 +412,7 @@
     <div class="between r" style="--i:2"><span>dengan</span></div>
 
     <div class="duo rev r" style="--i:3">
-      <div class="portrait" style="--bg:url(foto/groom.jpg)"></div>
+      <div class="portrait" style="--bg:url(groom.jpg)"></div>
       <div>
         <p class="label">Mempelai Pria</p>
         <p class="script name">Teguh Firmansyah</p>
@@ -428,7 +426,7 @@
 
   <!-- ============================ 4. SAVE THE DATE ============================ -->
   <section class="scene veil" id="tanggal">
-    <div class="scene-bg" style="--bg:url(foto/p04.jpg);--pos:60% 40%"></div>
+    <div class="scene-bg" style="--bg:url(p04.jpg);--pos:60% 40%"></div>
     <svg class="fol tl" viewBox="0 0 260 300"><use href="#fol2"/></svg>
     <svg class="fol tr" viewBox="0 0 260 300"><g transform="translate(260 0) scale(-1 1)"><use href="#fol1"/></g></svg>
     <svg class="fol bl sm" viewBox="0 0 260 300"><g transform="translate(0 300) scale(1 -1)"><use href="#fol1"/></g></svg>
@@ -455,7 +453,7 @@
 
   <!-- ============================ 5. ACARA & LOKASI ============================ -->
   <section class="scene veil" id="lokasi">
-    <div class="scene-bg" style="--bg:url(foto/p09.jpg);--pos:55% 40%"></div>
+    <div class="scene-bg" style="--bg:url(p09.jpg);--pos:55% 40%"></div>
     <svg class="fol tl sm" viewBox="0 0 260 300"><use href="#fol1"/></svg>
     <svg class="fol tr sm" viewBox="0 0 260 300"><g transform="translate(260 0) scale(-1 1)"><use href="#fol2"/></g></svg>
     <svg class="fol bl sm" viewBox="0 0 260 300"><g transform="translate(0 300) scale(1 -1)"><use href="#fol2"/></g></svg>
@@ -484,14 +482,14 @@
   <section class="scene gallery" id="galeri">
     <p class="g-label r" style="--i:0">Our Moment</p>
     <p class="gold gal-title r" style="--i:1">Pre-Wedding Gallery</p>
-    <div class="strip r" style="--i:2"><div class="track"><button class="ph" type="button" data-i="0" aria-label="Foto 1"><img src="foto/t01.jpg" loading="lazy" alt="Foto prewedding 1"></button><button class="ph" type="button" data-i="1" aria-label="Foto 2"><img src="foto/t02.jpg" loading="lazy" alt="Foto prewedding 2"></button><button class="ph" type="button" data-i="2" aria-label="Foto 3"><img src="foto/t03.jpg" loading="lazy" alt="Foto prewedding 3"></button><button class="ph" type="button" data-i="3" aria-label="Foto 4"><img src="foto/t04.jpg" loading="lazy" alt="Foto prewedding 4"></button><button class="ph" type="button" data-i="4" aria-label="Foto 5"><img src="foto/t05.jpg" loading="lazy" alt="Foto prewedding 5"></button><button class="ph" type="button" data-i="0" aria-label="Foto 1"><img src="foto/t01.jpg" loading="lazy" alt="Foto prewedding 1"></button><button class="ph" type="button" data-i="1" aria-label="Foto 2"><img src="foto/t02.jpg" loading="lazy" alt="Foto prewedding 2"></button><button class="ph" type="button" data-i="2" aria-label="Foto 3"><img src="foto/t03.jpg" loading="lazy" alt="Foto prewedding 3"></button><button class="ph" type="button" data-i="3" aria-label="Foto 4"><img src="foto/t04.jpg" loading="lazy" alt="Foto prewedding 4"></button><button class="ph" type="button" data-i="4" aria-label="Foto 5"><img src="foto/t05.jpg" loading="lazy" alt="Foto prewedding 5"></button></div></div>
-    <div class="strip r" style="--i:3"><div class="track back"><button class="ph" type="button" data-i="5" aria-label="Foto 6"><img src="foto/t06.jpg" loading="lazy" alt="Foto prewedding 6"></button><button class="ph" type="button" data-i="6" aria-label="Foto 7"><img src="foto/t07.jpg" loading="lazy" alt="Foto prewedding 7"></button><button class="ph" type="button" data-i="7" aria-label="Foto 8"><img src="foto/t08.jpg" loading="lazy" alt="Foto prewedding 8"></button><button class="ph" type="button" data-i="8" aria-label="Foto 9"><img src="foto/t09.jpg" loading="lazy" alt="Foto prewedding 9"></button><button class="ph" type="button" data-i="9" aria-label="Foto 10"><img src="foto/t10.jpg" loading="lazy" alt="Foto prewedding 10"></button><button class="ph" type="button" data-i="5" aria-label="Foto 6"><img src="foto/t06.jpg" loading="lazy" alt="Foto prewedding 6"></button><button class="ph" type="button" data-i="6" aria-label="Foto 7"><img src="foto/t07.jpg" loading="lazy" alt="Foto prewedding 7"></button><button class="ph" type="button" data-i="7" aria-label="Foto 8"><img src="foto/t08.jpg" loading="lazy" alt="Foto prewedding 8"></button><button class="ph" type="button" data-i="8" aria-label="Foto 9"><img src="foto/t09.jpg" loading="lazy" alt="Foto prewedding 9"></button><button class="ph" type="button" data-i="9" aria-label="Foto 10"><img src="foto/t10.jpg" loading="lazy" alt="Foto prewedding 10"></button></div></div>
+    <div class="strip r" style="--i:2"><div class="track"><button class="ph" type="button" data-i="0" aria-label="Foto 1"><img src="t01.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 1"></button><button class="ph" type="button" data-i="1" aria-label="Foto 2"><img src="t02.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 2"></button><button class="ph" type="button" data-i="2" aria-label="Foto 3"><img src="t03.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 3"></button><button class="ph" type="button" data-i="3" aria-label="Foto 4"><img src="t04.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 4"></button><button class="ph" type="button" data-i="4" aria-label="Foto 5"><img src="t05.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 5"></button><button class="ph" type="button" data-i="0" aria-label="Foto 1"><img src="t01.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 1"></button><button class="ph" type="button" data-i="1" aria-label="Foto 2"><img src="t02.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 2"></button><button class="ph" type="button" data-i="2" aria-label="Foto 3"><img src="t03.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 3"></button><button class="ph" type="button" data-i="3" aria-label="Foto 4"><img src="t04.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 4"></button><button class="ph" type="button" data-i="4" aria-label="Foto 5"><img src="t05.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 5"></button></div></div>
+    <div class="strip r" style="--i:3"><div class="track back"><button class="ph" type="button" data-i="5" aria-label="Foto 6"><img src="t06.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 6"></button><button class="ph" type="button" data-i="6" aria-label="Foto 7"><img src="t07.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 7"></button><button class="ph" type="button" data-i="7" aria-label="Foto 8"><img src="t08.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 8"></button><button class="ph" type="button" data-i="8" aria-label="Foto 9"><img src="t09.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 9"></button><button class="ph" type="button" data-i="9" aria-label="Foto 10"><img src="t10.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 10"></button><button class="ph" type="button" data-i="5" aria-label="Foto 6"><img src="t06.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 6"></button><button class="ph" type="button" data-i="6" aria-label="Foto 7"><img src="t07.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 7"></button><button class="ph" type="button" data-i="7" aria-label="Foto 8"><img src="t08.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 8"></button><button class="ph" type="button" data-i="8" aria-label="Foto 9"><img src="t09.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 9"></button><button class="ph" type="button" data-i="9" aria-label="Foto 10"><img src="t10.jpg" loading="lazy" onerror="this.onerror=null;this.src=this.src.replace(/\/t(\d\d)\.jpg$/,'/p$1.jpg')" alt="Foto prewedding 10"></button></div></div>
     <p class="gal-tip r" style="--i:4">Ketuk foto di tengah untuk memperbesar</p>
   </section>
 
   <!-- ============================ 7. QUOTE ============================ -->
   <section class="scene quote" id="quote">
-    <div class="scene-bg" style="--bg:url(foto/p05.jpg)"></div>
+    <div class="scene-bg" style="--bg:url(p05.jpg)"></div>
     <svg class="fol tl sm" viewBox="0 0 260 300" style="opacity:.8"><use href="#fol1"/></svg>
     <svg class="fol tr sm" viewBox="0 0 260 300" style="opacity:.8"><g transform="translate(260 0) scale(-1 1)"><use href="#fol2"/></g></svg>
     <p class="serif r" style="--i:0">
@@ -504,7 +502,7 @@
 
   <!-- ============================ 8. GIFT ============================ -->
   <section class="scene veil gift" id="gift">
-    <div class="scene-bg" style="--bg:url(foto/p02.jpg);--pos:60% 30%"></div>
+    <div class="scene-bg" style="--bg:url(p02.jpg);--pos:60% 30%"></div>
     <svg class="fol tl sm" viewBox="0 0 260 300"><use href="#fol2"/></svg>
     <svg class="fol tr sm" viewBox="0 0 260 300"><g transform="translate(260 0) scale(-1 1)"><use href="#fol1"/></g></svg>
     <svg class="fol bl sm" viewBox="0 0 260 300"><g transform="translate(0 300) scale(1 -1)"><use href="#fol1"/></g></svg>
@@ -532,7 +530,7 @@
 
   <!-- ============================ 9. CLOSING ============================ -->
   <section class="scene veil closing" id="closing">
-    <div class="scene-bg" style="--bg:url(foto/p10.jpg);--pos:50% 30%"></div>
+    <div class="scene-bg" style="--bg:url(p10.jpg);--pos:50% 30%"></div>
     <svg class="fol tl sm" viewBox="0 0 260 300"><use href="#fol1"/></svg>
     <svg class="fol tr sm" viewBox="0 0 260 300"><g transform="translate(260 0) scale(-1 1)"><use href="#fol2"/></g></svg>
     <svg class="fol bl xs" viewBox="0 0 260 300"><g transform="translate(0 300) scale(1 -1)"><use href="#fol2"/></g></svg>
@@ -623,7 +621,7 @@ function showPhoto(i){
   lbImg.style.opacity = 0;
   var full = new Image();
   full.onload = function(){ lbImg.src = full.src; lbImg.style.opacity = 1; };
-  full.src = 'foto/p' + pad2(lbIndex + 1) + '.jpg';
+  full.src = 'p' + pad2(lbIndex + 1) + '.jpg';
   lbCount.textContent = (lbIndex + 1) + ' / ' + TOTAL_PHOTOS;
 }
 function openLightbox(i){
